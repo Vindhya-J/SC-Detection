@@ -6,7 +6,7 @@ from PIL import Image
 import io
 import base64
 
-model = load_model('my_model.h5')
+model = load_model('my_modelMobileNetV2.h5')
 class_label=["Actinic keratoses/ Bowen's Disease ",
             "Basal Cell Carcinoma(Cancerous)", 
             "Seborrheic Keratosis", 

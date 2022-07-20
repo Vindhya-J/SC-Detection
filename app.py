@@ -41,7 +41,7 @@ def predict_cancer(image):
     #input_img = cv2.imread(image)
     #input_img1 = cv2.resize(input_img,(224,224))
     input_img1 = np.reshape(img,[1,224,224,3])
-    input_img1 = tf.keras.applications.mobilenet_v2.preprocess_input(input_img1)
+    input_img1 = tf.keras.applications.mobilenet.preprocess_input(input_img1)
     classes_pred = model.predict(input_img1)
     classes = [np.argmax(element) for element in classes_pred]
     prediction= classes
